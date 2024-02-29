@@ -1,14 +1,16 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import React from 'react';
 import { Post } from '../types/post';
-import { Link } from 'expo-router';
+import {Link, useRouter} from 'expo-router';
 
 const PostListItem = ({ post }: { post: Post }) => {
+  const router = useRouter();
+
   return (
-    <TouchableOpacity activeOpacity={0.7} style={styles.container}>
-      <Link style={styles.link} href={`/${post.slug}`} style={{ fontSize: 16, fontWeight: '500' }}>
+    <TouchableOpacity onPress={() => router.push(`/${post.slug}`)} activeOpacity={0.7} style={styles.container}>
+      <Text style={styles.link}>
         {post.title}
-      </Link>
+      </Text>
     </TouchableOpacity>
   );
 };
