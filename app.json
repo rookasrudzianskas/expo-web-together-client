@@ -2,7 +2,7 @@
   "expo": {
     "name": "RNBlog",
     "slug": "RNBlog",
-    "scheme": "notJustBlog",
+    "scheme": "rokasRudzianskas",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -33,7 +33,7 @@
       [
         "expo-router",
         {
-          "origin": "https://rn-blog.vercel.app/"
+          "origin": "https://roookas-expo-blog.vercel.app/"
         }
       ],
       "expo-font"
