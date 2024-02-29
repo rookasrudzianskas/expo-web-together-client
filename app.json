@@ -12,7 +12,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -27,6 +29,14 @@
       "bundler": "metro",
       "output": "static"
     },
-    "plugins": [["expo-router", { "origin": "https://rn-blog.vercel.app/" }]]
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://rn-blog.vercel.app/"
+        }
+      ],
+      "expo-font"
+    ]
   }
 }
